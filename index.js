@@ -49,7 +49,8 @@ function init() {
   );
 }
 
-fs.writeFile('/my-portfolio.html', htmlContent, (err) => 
+fs.writeFile('./my-portfolio.html', htmlContent, (err) => 
 err ? console.error(err) : console.log('Success!'));
 
+// Function call to initialize app
 init();

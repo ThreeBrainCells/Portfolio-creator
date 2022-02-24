@@ -1,5 +1,5 @@
 {
-  "name": "28-Ins_Inquirer-Demo",
+  "name": "Portfolio Creator",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^6.5.0"
+    "inquirer": "^8.2.0"
   }
 }

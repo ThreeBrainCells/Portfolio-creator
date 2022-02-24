@@ -6,7 +6,7 @@ var htmlContent = `<html><br>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>${data.username}'s Portfolio</title>
+<title>${data.name}'s Portfolio</title>
 </head><br>
 <body><br>
 </body>

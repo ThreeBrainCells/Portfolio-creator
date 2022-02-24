@@ -30,7 +30,7 @@ inquirer.prompt([
     },
   ]).then(data => console.table(data));
 
-let htmlContent = `<html><br>
+htmlContent = `<html><br>
 <head><br>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">

@@ -1,8 +1,8 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-let htmlContent = ''
+let htmlContent = '';
 
-inquirer.prompt([
+const questions = [
     {
         type: 'input',
         name: 'name',
@@ -28,7 +28,7 @@ inquirer.prompt([
         name: 'username',
         message: 'What is your GitHub username?'
     },
-  ]).then(data => console.table(data));
+  ];
 
 htmlContent = `<html><br>
 <head><br>
@@ -40,6 +40,14 @@ htmlContent = `<html><br>
 <body>
 </body>
 </html>`;
+
+function init() {
+  inquirer.prompt(questions)
+      .then(answers => {
+          console.log(answers)
+      }
+  );
+}
 
 fs.writeFile('/my-portfolio.html', htmlContent, (err) => 
 err ? console.error(err) : console.log('Success!'));

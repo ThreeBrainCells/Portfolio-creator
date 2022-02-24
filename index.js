@@ -28,7 +28,7 @@ const questions = [
         name: 'username',
         message: 'What is your GitHub username?'
     },
-  ];
+].then(data => console.table(data));
 
 htmlContent = `<html><br>
 <head><br>

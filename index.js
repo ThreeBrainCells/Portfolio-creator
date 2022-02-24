@@ -4,19 +4,29 @@ const fs = require('fs');
 
 inquirer.prompt([
     {
-      type: 'input',
-      message: 'What is your user name?',
-      name: 'username',
+        type: 'input',
+        name: 'name',
+        message: 'What is your name?'
     },
     {
-      type: 'password',
-      message: 'What is your password?',
-      name: 'password',
+        type: 'input',
+        name: 'location',
+        message: 'where Are you located?'
     },
     {
-      type: 'password',
-      message: 'Re-enter password to confirm:',
-      name: 'confirm',
+        type: 'input',
+        name: 'bio',
+        message:'Please write your bio?'
+    },
+    {
+        type: 'input',
+        name: 'linkedInName',
+        message: 'What is your linkedIn username?'
+    },
+    {
+        type: 'input',
+        name: 'username',
+        message: 'What is your GitHub username?'
     },
   ])
   .then((response) =>
